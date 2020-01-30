@@ -1,23 +1,11 @@
-FROM nginx
+FROM node:12.14.1-stretch
 
 RUN apt-get update -y && \
     apt-get install -y \
             gnupg2 \
             git-core \
             joe \
-            curl && \
-    curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
-    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
-    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-
-RUN apt-key adv --keyserver pgp.mit.edu --recv 9D41F3C3 && \
-    echo "deb http://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-
-
-RUN apt-get update -y && \
-    apt-get install -y \
-            nodejs \
-            yarn
+            curl
  
 RUN curl -s -L https://github.com/a8m/envsubst/releases/download/v1.1.0/envsubst-`uname -s`-`uname -m` -o envsubst && \
     chmod +x envsubst && \
@@ -35,10 +23,10 @@ ENV PATH="/code/node_modules/.bin:${PATH}"
 ENV FORWARD_TO_HTTPS=xxxxxxxxxxx
 
 ADD package.json package.json
-#ADD yarn.lock yarn.lock
+ADD yarn.lock yarn.lock
 
-#RUN yarn install
+RUN yarn install
 
-#ADD . $APP_DIR
+ADD . $APP_DIR
 
-#CMD "/bin/bash"
+CMD "/bin/bash"
