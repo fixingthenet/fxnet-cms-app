@@ -92,7 +92,7 @@
 
 <script>
 export default {
-  name: 'MyLayout',
+  name: 'AdminLayout',
 
   data () {
     return {
