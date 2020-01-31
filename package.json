@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
-    "quasar": "^1.0.0"
+    "quasar": "^1.0.0",
+    "vue-layout-composer": "^0.1.5"
   },
   "devDependencies": {
     "@quasar/app": "^1.0.0"

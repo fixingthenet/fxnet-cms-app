@@ -1,4 +1,3 @@
-
 const routes = [
   {
     path: '/admin',
@@ -8,11 +7,8 @@ const routes = [
     ]
   },
   {
-    path: '/',
-    component: () => import('layouts/DefaultLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/Index.vue') }
-    ]
+    path: '*',
+    component: () => import('layouts/DefaultLayout.vue')
   }
 ]
 

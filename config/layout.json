@@ -1,0 +1,199 @@
+{
+  "component": "Layout",
+  "props": {
+    "orientation": "horizontal"
+  },
+  "children": [
+    {
+      "component": "Layout",
+      "display": {
+        "weight": 2
+      },
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        {
+          "component": "Layout",
+          "display": {
+            "weight": 1
+          },
+          "props": {
+            "orientation": "horizontal"
+          },
+          "children": [
+            {
+              "component": "Layout",
+              "display": {
+                "weight": 1
+              },
+              "props": {
+                "orientation": "vertical"
+              },
+              "children": [
+                {
+                  "component": "Title",
+                  "props": {
+                    "title": "Actias luna"
+                  }
+                },
+                {
+                  "component": "Figure",
+                  "props": {
+                    "text": "AKA - Luna Moth",
+                    "background": "#fff9c4"
+                  }
+                },
+                {
+                  "component": "TextBlock",
+                  "props": {
+                    "text": "Based on the climate in which they live, luna moths produce differing numbers of generations. The highly polyphagous caterpillars feed on the host plants."
+                  }
+                }
+              ]
+            },
+            {
+              "component": "Layout",
+              "display": {
+                "weight": 2
+              },
+              "props": {
+                "orientation": "vertical"
+              },
+              "children": [
+                {
+                  "component": "Image",
+                  "props": {
+                    "url": "http://vue-grid-layout.surge.sh/static/luna-moth-adult-2.png"
+                  }
+                },
+                {
+                  "component": "Figure",
+                  "props": {
+                    "text": "Adult Luna Moth with bright green colours",
+                    "fontFamily": "Homemade Apple",
+                    "color": "#66d2b3"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "component": "Layout",
+          "display": {
+            "weight": 1
+          },
+          "props": {
+            "orientation": "horizontal"
+          },
+          "children": [
+            {
+              "component": "Layout",
+              "display": {
+                "weight": 2
+              },
+              "props": {
+                "orientation": "vertical"
+              },
+              "children": [
+                {
+                  "component": "Image",
+                  "props": {
+                    "url": "http://vue-grid-layout.surge.sh/static/luna-moth.png"
+                  }
+                },
+                {
+                  "component": "Figure",
+                  "props": {
+                    "text": "Baby Luna walking on a plant",
+                    "fontFamily": "Homemade Apple",
+                    "color": "#66d2b3"
+                  }
+                },
+                {
+                  "component": "TextBlock",
+                  "props": {
+                    "text": "Actias luna, the luna moth, is a lime-green, Nearctic Saturniid moth in the family Saturniidae, subfamily Saturniinae. It has a wingspan of up to 114 mm (4.5 in) making it one of the largest moths in North America."
+                  }
+                }
+              ]
+            },
+            {
+              "component": "Layout",
+              "display": {
+                "weight": 1
+              },
+              "props": {
+                "orientation": "vertical"
+              },
+              "children": [
+                {
+                  "component": "Image",
+                  "props": {
+                    "url": "http://vue-grid-layout.surge.sh/static/monarch-04.png"
+                  }
+                },
+                {
+                  "component": "Figure",
+                  "props": {
+                    "text": "Adult Monarch Butterflies",
+                    "background": "#fff9c4"
+                  }
+                },
+                {
+                  "component": "Image",
+                  "props": {
+                    "url": "http://vue-grid-layout.surge.sh/static/monarch-03.png"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "Layout",
+      "display": {
+        "weight": 1
+      },
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        {
+          "component": "Title",
+          "props": {
+            "title": "Danaus plexippus"
+          }
+        },
+        {
+          "component": "Figure",
+          "props": {
+            "text": "AKA - Monarch Butterfly",
+            "background": "#fff9c4"
+          }
+        },
+        {
+          "component": "TextBlock",
+          "props": {
+            "text": "Monarchs were transported to the International Space Station and were bred there."
+          }
+        },
+        {
+          "component": "Image",
+          "props": {
+            "url": "http://vue-grid-layout.surge.sh/static/monarch-on-plant.png"
+          }
+        },
+        {
+          "component": "TextBlock",
+          "props": {
+            "text": "The monarch butterfly or simply monarch (Danaus plexippus) is a milkweed butterfly (subfamily Danainae) in the family Nymphalidae. Other common names depending on region include milkweed, common tiger, wanderer, and black veined brown."
+          }
+        }
+      ]
+    }
+  ]
+}
