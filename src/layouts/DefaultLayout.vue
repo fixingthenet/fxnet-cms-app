@@ -3,7 +3,7 @@
 
     <layout-composer
       :displayComponents="displayComponents"
-      :config="{}"
+      :config="internalConfig"
       @change:config="onConfigChange"
     />
   </div>
